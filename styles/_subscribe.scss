@@ -1,0 +1,105 @@
+.section_subscribe {
+    display: flex;
+    justify-content: center;
+    margin-top: -110px;
+    transform: translateY(-30%);
+
+
+    @include xl-max {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    @include xl-min {
+        max-height: 124px;
+    }
+
+    &__content {
+        width: 100%;
+        height: 100%;
+
+        background: #16697A;
+
+        @include xl-min {
+            display: flex;
+            max-width: 986px;
+            padding-left: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        @include xl-max {
+            max-width: 414px;
+        }
+
+        .content-title {
+            display: flex;
+            white-space: nowrap;
+
+            @include xl-min {
+                padding-right: 100px;
+            }
+
+            @include xl-max {
+                justify-content: center;
+                text-align: center;
+                padding: 30px 78px;
+            }
+
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 414px;
+            max-height: 58px;
+
+            @include xl-max {
+                margin-bottom: 30px;
+            }
+
+            .email-input {
+                @include xl-max {
+                    display: flex;
+                }
+
+                width: 100%;
+                height: 100%;
+                max-width: 336px;
+                min-height: 58px;
+                border-radius: 5px 0px 0px 5px;
+                border: 1px solid #E6E6E6;
+                background: #F9F9F9;
+                margin-left: 40px;
+                margin-bottom: 30px;
+            }
+
+            .subscribe-button {
+                @include xl-max {
+                    display: flex;
+                    margin-right: 40px;
+                }
+
+                width: 100%;
+                height: 100%;
+                max-width: 116px;
+                min-height: 58px;
+                border-radius: 0px 5px 5px 0px;
+                border: 1px solid #E6E6E6;
+                background: var(--primary-color, #FFA62B);
+
+
+                &--text {
+                    @include xl-max {
+                        display: flex;
+                    }
+
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}

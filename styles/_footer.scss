@@ -1,0 +1,81 @@
+.section_footer {
+    display: flex;
+    justify-content: center;
+
+    .footer_nav {
+        display: flex;
+        background: #16697A;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @include xl-min {
+            flex-direction: row;
+            padding-left: 196px;
+            padding-right: 196px;
+        }
+
+        @include xl-max {
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 88px;
+            padding-right: 88px;
+        }
+
+        .links {
+            @include xl-min {
+                display: flex;
+                flex-direction: row;
+            }
+
+            @include xl-max {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .item {
+            @include xl-min {
+                display: flex;
+                margin-right: 40px;
+            }
+
+            @include xl-max {
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+
+            .title_text {
+                color: #FFFFFF;
+                text-decoration: none;
+                text-align: left;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+            }
+
+            .link_text {
+                color: #FFFFFF;
+                text-decoration: none;
+                text-align: left;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+            }
+
+            .contact {
+                @include xl-max {
+                    display: flex;
+                    padding-top: 10px;
+                    gap: 10px;
+                }
+            }
+
+        }
+    }
+}

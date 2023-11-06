@@ -1,0 +1,118 @@
+.features-second {
+    display: flex;
+    margin-top: 40px;
+    padding-top: 100px;
+
+    .section_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 86px;
+        background: #F3F3F3;
+
+
+        .titles {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            .title {
+                display: flex;
+                width: 100%;
+                height: 100%;
+
+                @include xl-max {
+                    max-width: 180px;
+                }
+
+                @include xl-min {
+                    min-width: 430px;
+                }
+
+                font-family: Montserrat;
+                font-size: 48px;
+                font-weight: 800;
+                line-height: 80px;
+                letter-spacing: 0.24px;
+                text-align: center;
+                color: var(--text-color);
+
+            }
+
+
+            .subtitle {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                font-family: Montserrat;
+                text-align: center;
+                padding-bottom: 20px;
+
+                @include xl-max {
+                    max-width: 230px;
+                }
+
+                @include xl-min {
+                    max-width: 400px;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                color: var(--second-text-color);
+            }
+        }
+    }
+}
+
+.features-second_links {
+    display: flex;
+
+    @include xl-max {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    @include xl-min {
+        padding-bottom: 50px;
+    }
+
+    width: 100%;
+    height: 100%;
+    background: #F3F3F3;
+    gap: 30px;
+
+    .card-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .card-text {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            min-width: 232px;
+            width: 100%;
+            height: 100%;
+            background: white;
+        }
+
+        .card-media {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+
+}
