@@ -1,9 +1,6 @@
 .section_subscribe {
     display: flex;
     justify-content: center;
-    margin-top: -110px;
-    transform: translateY(-30%);
-
 
     @include xl-max {
         margin-top: 30px;
@@ -11,6 +8,8 @@
     }
 
     @include xl-min {
+        margin-top: -110px;
+        transform: translateY(-30%);
         max-height: 124px;
     }
 

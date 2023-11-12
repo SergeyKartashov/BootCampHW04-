@@ -345,6 +345,12 @@ h3 {
   }
 }
 
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
 .features-first {
   display: flex;
   justify-content: center;
@@ -934,6 +940,7 @@ h3 {
   .section_clients .content .media6 {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
   }
 }
 .section_clients .client_block {
@@ -953,12 +960,15 @@ h3 {
   min-width: 1440px;
   margin: 0px auto;
 }
+@media screen and (max-width: 1199px) {
+  .section_clients .cover {
+    display: none;
+  }
+}
 
 .section_subscribe {
   display: flex;
   justify-content: center;
-  margin-top: -110px;
-  transform: translateY(-30%);
 }
 @media screen and (max-width: 1199px) {
   .section_subscribe {
@@ -968,6 +978,8 @@ h3 {
 }
 @media screen and (min-width: 1200px) {
   .section_subscribe {
+    margin-top: -110px;
+    transform: translateY(-30%);
     max-height: 124px;
   }
 }
