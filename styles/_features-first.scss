@@ -1,0 +1,132 @@
+.features-first {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+    .section_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 30px;
+
+            .title {
+                display: flex;
+                width: 100%;
+                height: 100%;
+
+                @include xl-max {
+                    max-width: 180px;
+                }
+
+                @include xl-min {
+                    min-width: 450px;
+                }
+
+                font-family: Montserrat;
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 80px;
+                letter-spacing: 0.24px;
+                text-align: center;
+                color: var(--text-color);
+            }
+
+            .subtitle {
+                display: flex;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+
+                color: var(--second-text-color);
+
+                @include xl-max {
+                    max-width: 230px;
+                }
+
+                @include xl-min {
+                    max-width: 400px;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.features_links {
+    display: flex;
+
+    @include xl-max {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    gap: 30px;
+
+    .link-back {
+        display: flex;
+        padding: 10px 26px;
+
+        .card-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #00A0C1;
+            width: 100%;
+            min-width: 326px;
+            min-height: 142px;
+
+            @include xl-max {
+                max-width: 326px;
+                max-height: 142px;
+            }
+
+            padding: 30px 40px;
+            gap: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 13px 19px 0px #00000012;
+        }
+    }
+
+    .link-border {
+        display: flex;
+        padding: 10px 26px;
+
+        .card-item {
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+
+
+            width: 100%;
+            min-width: 326px;
+            min-height: 142px;
+
+            @include xl-max {
+                max-width: 326px;
+                max-height: 142px;
+            }
+
+            padding: 30px 40px;
+            gap: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 13px 19px 0px #00000012;
+        }
+    }
+}

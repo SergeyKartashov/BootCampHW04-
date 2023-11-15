@@ -1,0 +1,96 @@
+@import "./_mixins.scss";
+@import "./_text-options.scss";
+@import "./_font.scss";
+@import "./_header.scss";
+@import "./_features-first.scss";
+@import "./_features-second.scss";
+@import "./_about.scss";
+@import "./_grid.scss";
+@import "./_clients.scss";
+@import "./_subscribe.scss";
+@import "./_contact.scss";
+@import "./_consulting.scss";
+@import "./_footer.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&family=Montserrat:wght@400;500;600;700");
+
+
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: black;
+    --second-text-color: #737373;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* base styles */
+body {
+    margin: 0;
+
+    font-family: "Work Sans", sans-serif;
+    background-color: var(--bg-color);
+    color: #fff;
+
+    &.hidden {
+        overflow-y: hidden;
+    }
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+    outline: none;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-weight: 400;
+}
+
+/* ------------ */
+
+.button {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+.button:hover {
+    background-color: #4452fe;
+    border-color: #4452fe;
+}
+
+.button--small {
+    padding: 14px 46px;
+}
+
+.button--large {
+    padding: 10px 36px;
+}
+
+
+._container {
+    max-width: 1050px;
+    padding: 0 5px;
+    margin: 0px auto;
+}
